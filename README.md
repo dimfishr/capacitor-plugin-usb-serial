@@ -18,6 +18,7 @@ npx cap sync
 * [`closeSerial()`](#closeserial)
 * [`readSerial()`](#readserial)
 * [`writeSerial(...)`](#writeserial)
+* [`removeAllListeners()`](#removealllisteners)
 * [`addListener('log', ...)`](#addlistenerlog)
 * [`addListener('connected', ...)`](#addlistenerconnected)
 * [`addListener('attached', ...)`](#addlistenerattached)
@@ -84,6 +85,15 @@ writeSerial(options: { data: string; }) => Promise<void>
 | Param         | Type                           |
 | ------------- | ------------------------------ |
 | **`options`** | <code>{ data: string; }</code> |
+
+--------------------
+
+
+### removeAllListeners()
+
+```typescript
+removeAllListeners() => Promise<void>
+```
 
 --------------------
 

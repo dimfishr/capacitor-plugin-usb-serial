@@ -26,6 +26,7 @@ export interface UsbSerialPlugin {
     writeSerial(options: {
         data: string;
     }): Promise<void>;
+    removeAllListeners(): Promise<void>;
     addListener(eventName: 'log', listenerFunc: (data: {
         text: string;
         tag: string;
